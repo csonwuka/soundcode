@@ -1,0 +1,82 @@
+    body {
+        background-color: darkseagreen;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .blue-box {
+        background: cornflowerblue;
+        flex-basis: 100%;
+        height: 480px;
+        line-height: 440px;
+        margin: 2.5rem;
+        text-align: center;
+
+    }
+
+    .white-box {
+        background: white;
+        flex-basis: 100%;
+        height: 480px;
+        line-height: 100px;
+        margin: 2.5rem;
+        text-align: center;
+    }
+
+    .s-code {
+        color: white;
+        font-size: xx-large;
+        font-family: "Lucida Handwriting", serif ;
+        font-variant: small-caps;
+    }
+
+    .scan {
+        color: cornflowerblue;
+        font-size: xx-large;
+        font-family: "Lucida Handwriting", serif ;
+        font-variant: small-caps;
+    }
+
+    .blue-circle {
+        border : 0.0625em solid cornflowerblue;
+        background-color: cornflowerblue;
+        width: 13em;
+        height: 13em;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em ;
+        line-height: 10em;
+        text-align: center;
+
+    }
+
+    .white-circle {
+        border : 0.0625em solid white;
+        background-color: white;
+        width: 8.80em;
+        height: 8.80em;
+        border-radius: 50%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+
+    @media screen and (min-width: 600px) {
+        main {
+            flex-wrap: nowrap;
+        }
+        .blue-box, .white-box {
+            flex-basis: 33%;
+        }
+    }
